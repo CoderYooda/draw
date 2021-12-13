@@ -66,7 +66,7 @@
     };
 
     window.save = (index, color) => {
-        axios.post('save.php', {index: index, color: color})
+        axios.post('/save.php', {index: index, color: color})
         .then((resp) => {
             console.log(resp);
         });
