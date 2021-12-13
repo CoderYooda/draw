@@ -13,4 +13,6 @@ $arr[$index] = $color;
 
 $content = '<?php $arr = ' . var_export($arr, true) . ';';
 
-file_put_contents('/data.php', $content);
+$test = file_put_contents('data.php', $content);
+
+var_dump($test);
